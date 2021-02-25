@@ -1,0 +1,315 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.header{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+.header2{
+    overflow: hidden;
+    border-bottom: 2px solid;
+
+}
+.logo{
+    width: 10%;
+    float: left;
+    float: inline-end;
+}
+.imglogo{
+    width: 80%;
+}
+/*botoes do header*/
+.btn {
+    display: inline-block;
+    font-size: 25px;
+    border: 0;
+    padding: 8px;
+    margin: 1px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.btn:hover{
+    border-radius: 15px;
+    box-shadow: 0 2px  rgba(0, 0, 0, 0.575);
+    background-color: rgb(53, 175, 23);
+    color: white;
+}
+.btn:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+.opcoes_header{
+    width: 25%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+/*fim botoes do header*/
+/* inicio slide das imagens*/
+.container{
+    margin: 0 auto;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    padding-bottom: 35%;
+    background: #4c4c4c;
+}
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide_img img{
+    width: 100%;
+    height: 100%;
+}
+#i1, #i2, #i3{
+    display: none;
+}
+.pre, .nxt{
+    width: 4%;
+    height: 27%;
+    position: absolute;
+    top: 0;
+    background: rgba(3, 3, 3, 0);
+    z-index: 99;
+    cursor: pointer;
+}
+.pre{
+    background-image: url(../imagens/Seta5.png);
+    background-size: 100%;
+    margin: 11.5%  0 3%;
+    left: 0;
+}
+.nxt{
+    background-image: url(../imagens/Seta4.png);
+    background-size: 100%;
+    margin: 11.5% 0% 0 0;
+    right: 0;
+}
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgb(129, 129, 129);
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+    background: rgb(255, 255, 255);
+    border: 2px solid;
+    
+}
+.slide_img{
+    z-index: -1;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+    z-index: 9;
+}
+/* fim slide das imagens*/
+.corpo_pagina{
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.intro{
+    width: 90%;
+    margin: 0 5%;
+}
+.fotoprin{
+    width: 60%;
+}
+.fotopadrao{
+    width: 55%;
+}
+.txt1{
+    padding: 1%;
+    width: 30%;
+    float: left;
+    margin: 1% 0 1% 17.5%;
+    background-color: rgba(128, 128, 128, 0.123);
+    overflow: hidden;
+}
+.txt2{
+    padding: 1%;
+    float: right;
+    margin: 1% 17.5% 1% 0;
+    width: 30%;
+    background-color: rgba(128, 128, 128, 0.123);
+    overflow: hidden;
+}
+.txt3{
+    padding: 1%;
+    width: 50%;
+    margin: 0 25% 1% 25%;
+    background-color: rgba(128, 128, 128, 0.123);
+    overflow: hidden;
+}
+.btn_mais{
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(43, 120, 235, 0.795);
+    color: white;
+}
+.btn_mais:hover{
+    background-color: rgb(16, 65, 139);
+}
+/*Rodape da pagina*/
+.footer{
+    border: solid rgb(22, 202, 22);
+    border-width: 20px 0;
+    width: 100%;
+    background-color: rgb(16, 136, 16);
+    overflow: hidden;
+}
+.logo-footer{
+    padding-left: 1%;
+    float: left;
+}
+.logo-footer img{
+    width: 60px;
+}
+.info{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+/*fim Rodape*/
+/*Inicio formatação demais paginas*/
+.corpo_pagina_sust{
+    border-left: solid 2px black;
+    width: 88%;
+    float: right;
+    font-size: 20px;
+    padding: 1%;
+}
+.logo2{
+    float: left;
+    width: 9.8%;
+    height: 100%;
+    overflow: hidden;
+}
+.logo2 img{
+    width: 100%;
+}
+.corpo_pagina_imp{
+    border-left: solid 2px black;
+    width: 88%;
+    float: right;
+    font-size: 20px;
+    padding: 1%;
+}
+.corpo_pagina_green{
+    border-left: solid 2px black;
+    width: 88%;
+    float: right;
+    font-size: 20px;
+    padding: 1%;
+}
+.corpo_pagina_sobre{
+    font-size: 22px;
+    margin: 5% 15%;
+}
+.sidebar{
+    font-size: 18px;
+    display: inline-block;
+    padding: 4%;
+    text-decoration: none;
+}
+.sidebar:hover{
+    text-decoration: underline green;
+}
+@media screen and (max-width:1024px){
+    .corpo_pagina{
+        overflow-x: hidden;
+    }
+    .txt1{
+        padding: 1%;
+        width: 75%;
+        margin: 0 12.5% 1% 12.5%;
+        background-color: rgba(128, 128, 128, 0.123);
+        overflow: hidden;
+    }
+    .txt2{
+        padding: 1%;
+        width: 75%;
+        margin: 0 10.5% 1% 14.5%;
+        background-color: rgba(128, 128, 128, 0.123);
+        overflow: hidden;
+    }
+    .txt3{
+        padding: 1%;
+        width: 75%;
+        margin: 0 12.5% 1% 12.5%;
+        background-color: rgba(128, 128, 128, 0.123);
+        overflow: hidden;
+    }
+    .fotopadrao{
+        width: 78%;
+    }
+    .imglogo{
+        width: 150%;
+    }
+    .logo2{
+        border-bottom: 2px solid black;
+        width: 100%;
+        height: auto;
+    }
+    .imglogo2{
+        float: left;
+        width: 10.5%;
+    }
+    .links_paginas{
+        float: right;
+        padding: 1%;
+    }
+    .links_paginas h3{
+        margin: 2% 0 0 0;
+    }
+    .sidebar{
+        padding: 2%;
+        font-size: 16px;
+    }
+    .corpo_pagina_sust{
+        border-left: none;
+        width: 95%;
+        font-size: 20px;
+        padding: 1%;
+        margin: 2%;
+    }
+    .corpo_pagina_green{
+        border-left: none;
+        width: 95%;
+        font-size: 20px;
+        padding: 1%;
+        margin: 2%;
+    }
+    .corpo_pagina_imp{
+        border-left: none;
+        width: 95%;
+        font-size: 20px;
+        padding: 1%;
+        margin: 2%;
+    }
+}
+/*Fim Formatação das paginas*/
